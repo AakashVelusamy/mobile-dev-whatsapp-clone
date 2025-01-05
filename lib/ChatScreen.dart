@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'Person.dart';
+import 'models/Person.dart';
 
+//https://jsonplaceholder.typicode.com/users
 
 class Chats extends StatelessWidget {
   final String searchQuery;
@@ -12,6 +13,7 @@ class Chats extends StatelessWidget {
         age: 19,
         dept: 'AMCS',
         chat: ['hello', 'hi'],
+        time: '10:00',
         image:
         'https://media.licdn.com/dms/image/v2/D5603AQEUeTdEl3OIjQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1714955276245?e=2147483647&v=beta&t=1whf2L-snb1kYWSPrTQ63g3FrrqpJaC6UwXa0KKZWCU'),
     Person(
@@ -20,49 +22,57 @@ class Chats extends StatelessWidget {
         dept: 'AMCS',
         chat: ['laduki laduki', 'enna laduki?', 'naa jeansu potta vella gulufii.'],
         image:
-        'https://media.licdn.com/dms/image/v2/D5603AQHHL1XUI_2ouQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1722533933390?e=2147483647&v=beta&t=NQ1nXtCXPcF0yLnUhWDc4sODGDW7_W-iPjgT5Qv03Vw'),
+        'https://media.licdn.com/dms/image/v2/D5603AQHHL1XUI_2ouQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1722533933390?e=2147483647&v=beta&t=NQ1nXtCXPcF0yLnUhWDc4sODGDW7_W-iPjgT5Qv03Vw',
+        time: ''),
     Person(
         name: 'Ajith Anna',
         age: 27,
         dept: 'AMCS',
         chat: ['hello', 'Hello'],
         image:
-        'https://media.licdn.com/dms/image/v2/C5603AQFaoQrwyeRa6Q/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1608675728895?e=1741219200&v=beta&t=sFeOopynMtYB_a0gLmUtzRYuuRucLJWfczJqEuI6bl8'),
+        'https://media.licdn.com/dms/image/v2/C5603AQFaoQrwyeRa6Q/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1608675728895?e=1741219200&v=beta&t=sFeOopynMtYB_a0gLmUtzRYuuRucLJWfczJqEuI6bl8',
+        time: ''),
     Person(
         name: 'Sangamithra',
         age: 19,
         dept: 'AMCS',
         chat: ['hello', 'dont get afraid.'],
         image:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj6zt_8QQh5c-6nbxsGlAQciqnMNiadV0XkA&s'),
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj6zt_8QQh5c-6nbxsGlAQciqnMNiadV0XkA&s',
+        time: ''),
     Person(
         name: 'Prathish',
         age: 20,
         dept: 'AMCS',
         chat: ['hello', 'naalaiku. padathuku polaaama !?'],
         image:
-        ''),
+        '',
+        time: ''
+        ),
     Person(
         name: 'Vinay',
         age: 19,
         dept: 'AMCS',
         chat: ['hello', 'dei sappaaaaa'],
         image:
-        'https://media.licdn.com/dms/image/v2/D4E03AQGqFLczF3VCCQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1709227828637?e=1741824000&v=beta&t=j-p-56p9rSL1jUyCxJmFFVhnt6LVhchJo0Mfsdp4ke4'),
+        'https://media.licdn.com/dms/image/v2/D4E03AQGqFLczF3VCCQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1709227828637?e=1741824000&v=beta&t=j-p-56p9rSL1jUyCxJmFFVhnt6LVhchJo0Mfsdp4ke4',
+        time: ''),
     Person(
         name: 'GayG',
         age: 19,
         dept: 'AMCS',
         chat: ['hello', 'go away pplll'],
         image:
-        'https://hips.hearstapps.com/hmg-prod/images/taylor-swift-performs-onstage-during-taylor-swift-the-news-photo-1727782003.jpg?crop=0.65234xw:1xh;center,top&resize=1120:*'),
+        'https://hips.hearstapps.com/hmg-prod/images/taylor-swift-performs-onstage-during-taylor-swift-the-news-photo-1727782003.jpg?crop=0.65234xw:1xh;center,top&resize=1120:*',
+        time: ''),
     Person(
         name: 'Haritha',
         age: 19,
         dept: 'AMCS',
         chat: ['hello', '8.30 kulla vandha attendance unduuu'],
         image:
-        'https://media.licdn.com/dms/image/v2/D4E03AQHhBubTe7N_rQ/profile-displayphoto-shrink_100_100/B4EZN9CK96GYAU-/0/1732969542969?e=1741219200&v=beta&t=p9nUsxnl1TwY1j5nsOMv1yCPF4io8IKdLGv8w34uCeY'),
+        'https://media.licdn.com/dms/image/v2/D4E03AQHhBubTe7N_rQ/profile-displayphoto-shrink_100_100/B4EZN9CK96GYAU-/0/1732969542969?e=1741219200&v=beta&t=p9nUsxnl1TwY1j5nsOMv1yCPF4io8IKdLGv8w34uCeY',
+        time: ''),
   ];
 
   @override
@@ -85,6 +95,9 @@ class Chats extends StatelessWidget {
                   ? filteredPersons[index].image
                   : 'https://archive.org/download/whatsapp-smiling-guy-i-accidentally-made/whatsapp%20generic%20person%20light.jpg'),
             ),
+            trailing: Text(filteredPersons[index].time.isNotEmpty
+                ? filteredPersons[index].time
+                : ''),
             onTap: () {
               Navigator.push(
                 context,

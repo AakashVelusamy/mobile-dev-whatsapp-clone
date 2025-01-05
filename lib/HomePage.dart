@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           Chats(searchQuery: searchQuery), // Pass search query to Chats
           Updates(),
-          Communities(),
+          Community(),
           Calls(),
         ],
       ),
