@@ -12,67 +12,67 @@ class Chats extends StatelessWidget {
         name: 'Aakash V (You)',
         age: 19,
         dept: 'AMCS',
-        chat: ['hello', 'hi'],
-        time: '10:00',
+        chat: ['hello', 'hi', 'how are you?', 'i am good, thanks!'],
+        time: '10:00 am',
         image:
         'https://media.licdn.com/dms/image/v2/D5603AQEUeTdEl3OIjQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1714955276245?e=2147483647&v=beta&t=1whf2L-snb1kYWSPrTQ63g3FrrqpJaC6UwXa0KKZWCU'),
     Person(
         name: 'Vithaha',
         age: 19,
         dept: 'AMCS',
-        chat: ['laduki laduki', 'enna laduki?', 'naa jeansu potta vella gulufii.'],
+        chat: ['hey', 'what’s up?', 'not much, just chilling.', 'same here!'],
         image:
         'https://media.licdn.com/dms/image/v2/D5603AQHHL1XUI_2ouQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1722533933390?e=2147483647&v=beta&t=NQ1nXtCXPcF0yLnUhWDc4sODGDW7_W-iPjgT5Qv03Vw',
-        time: ''),
+        time: '9:55 am'),
     Person(
         name: 'Ajith Anna',
         age: 27,
         dept: 'AMCS',
-        chat: ['hello', 'Hello'],
+        chat: ['good morning', 'morning!', 'how are you?', 'great, and you?'],
         image:
         'https://media.licdn.com/dms/image/v2/C5603AQFaoQrwyeRa6Q/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1608675728895?e=1741219200&v=beta&t=sFeOopynMtYB_a0gLmUtzRYuuRucLJWfczJqEuI6bl8',
-        time: ''),
+        time: '(9:00 am'),
     Person(
         name: 'Sangamithra',
         age: 19,
         dept: 'AMCS',
-        chat: ['hello', 'dont get afraid.'],
+        chat: ['hello!', 'hi there!', 'long time no see.', 'yeah, it’s been a while!'],
         image:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj6zt_8QQh5c-6nbxsGlAQciqnMNiadV0XkA&s',
-        time: ''),
+        time: '8:55 am'),
     Person(
         name: 'Prathish',
         age: 20,
         dept: 'AMCS',
-        chat: ['hello', 'naalaiku. padathuku polaaama !?'],
+        chat: ['are you coming to the party?', 'yeah, I’ll be there.', 'great, see you soon!'],
         image:
         '',
-        time: ''
+        time: '8:50 am'
         ),
     Person(
         name: 'Vinay',
         age: 19,
         dept: 'AMCS',
-        chat: ['hello', 'dei sappaaaaa'],
+        chat: ['hey, how’s it going?', 'all good, just relaxing!', 'nice, I’m working on something.'],
         image:
         'https://media.licdn.com/dms/image/v2/D4E03AQGqFLczF3VCCQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1709227828637?e=1741824000&v=beta&t=j-p-56p9rSL1jUyCxJmFFVhnt6LVhchJo0Mfsdp4ke4',
-        time: ''),
+        time: '8:45 am'),
     Person(
         name: 'GayG',
         age: 19,
         dept: 'AMCS',
-        chat: ['hello', 'go away pplll'],
+        chat: ['yo', 'hey!', 'you good?', 'all good, just tired.'],
         image:
         'https://hips.hearstapps.com/hmg-prod/images/taylor-swift-performs-onstage-during-taylor-swift-the-news-photo-1727782003.jpg?crop=0.65234xw:1xh;center,top&resize=1120:*',
-        time: ''),
+        time: '8:40 am'),
     Person(
         name: 'Haritha',
         age: 19,
         dept: 'AMCS',
-        chat: ['hello', '8.30 kulla vandha attendance unduuu'],
+        chat: ['how’s your day?', 'pretty good, thanks for asking.', 'any plans for later?'],
         image:
         'https://media.licdn.com/dms/image/v2/D4E03AQHhBubTe7N_rQ/profile-displayphoto-shrink_100_100/B4EZN9CK96GYAU-/0/1732969542969?e=1741219200&v=beta&t=p9nUsxnl1TwY1j5nsOMv1yCPF4io8IKdLGv8w34uCeY',
-        time: ''),
+        time: '8:35 am'),
   ];
 
   @override
