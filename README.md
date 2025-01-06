@@ -1,16 +1,3 @@
-# untitled
+# Whatsapp v2
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This is a sleek WhatsApp UI clone built with Flutter during a Mobile App Development workshop. The chat screen is fully designed, showing chats and redirecting to a detailed DM screen. Status and calls pages are simple placeholders, accessible via the navbar. This is a purely a front-end recreation with no backend integration.
