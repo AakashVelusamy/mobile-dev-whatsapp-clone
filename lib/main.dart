@@ -7,8 +7,5 @@ import 'MyApp.dart';
 void main() 
 {
   runApp(const MyApp());
-  // materialTextSelectionControls.hashCode(
-  //   JsObject.jsify(object)
-  // )
 }
 
